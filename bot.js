@@ -1,13 +1,11 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
 const Discord = require("discord.js")
 const client = new Discord.Client();
-var prefix = "b"
+var prefix = "--s"
 
 
 
 client.on('message', function(message) {
-    const myID = "439124716373147648";
+    const myID = "462038057529507841";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "sn")) {
                 if(message.author.id !== myID) return;
@@ -61,8 +59,3 @@ client.on('message', function(message) {
 });
 
 client.login(process.env.BOT_TOKEN); 
-
-
-
-
-client.login(process.env.BOT_TOKEN);
